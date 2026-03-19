@@ -936,7 +936,7 @@
 
   <!-- ======================== HERO ======================== -->
   <section class="hero" id="hero">
-    <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="site%20internet/HELMET.png">
+    <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="site%20internet/HELMET.png">
       <source src="site%20internet/background.mp4" type="video/mp4">
     </video>
     <div class="hero-overlay"></div>
@@ -1300,7 +1300,7 @@
   <!-- ======================== JS ======================== -->
   <script>
     // ---- Loader ----
-    window.addEventListener('load', () => {
+    document.addEventListener('DOMContentLoaded', () => {
       const loader = document.getElementById('loader');
       // Single dissolve — content, background and blur all transition together
       setTimeout(() => loader.classList.add('done'), 1600);
