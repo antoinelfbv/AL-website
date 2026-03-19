@@ -1300,12 +1300,12 @@
   <!-- ======================== JS ======================== -->
   <script>
     // ---- Loader ----
-    document.addEventListener('DOMContentLoaded', () => {
+    // ---- Loader (runs immediately — script is at end of body) ----
+    {
       const loader = document.getElementById('loader');
-      // Single dissolve — content, background and blur all transition together
       setTimeout(() => loader.classList.add('done'), 1600);
       setTimeout(() => loader.remove(), 3000);
-    });
+    }
 
     // ---- Hero subtitle split ----
     function splitHeroSub(animate) {
@@ -1739,7 +1739,7 @@
           'svc.t1': '3D &amp; VFX',
           'svc.d1': 'Modélisation 3D, texturing, look development, éclairage et rendu pour le cinéma et la publicité.',
           'svc.t2': 'IA &amp; Innovation',
-          'svc.d2': 'Solutions d\u2019IA générative, workflows créatifs d'IA et projets expérimentaux qui repoussent les limites du possible avec les technologies émergentes.',
+          'svc.d2': 'Solutions d\u2019IA g\u00E9n\u00E9rative, workflows cr\u00E9atifs d\u2019IA et projets exp\u00E9rimentaux qui repoussent les limites du possible avec les technologies \u00E9mergentes.',
           'svc.t3': 'Solutions Créatives',
           'svc.d3': 'Consultation créative de bout en bout, solutions innovantes et R&D pipeline pour les marques et les agences en quête d\u2019un storytelling visuel audacieux et avant-gardiste.',
           'svc.sub1': 'Cin\u00E9ma · Publicit\u00E9 · Exp\u00E9rimental',
