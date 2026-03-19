@@ -1,0 +1,7 @@
+node_modules/
+temporary screenshots/
+ressources videos/
+.DS_Store
+*.mov
+screenshot-*.mjs
+serve.mjs
